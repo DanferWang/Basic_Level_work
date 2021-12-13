@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b322944af6d3d4bd3f09779a1e83bcbc32a17f47be67a477cca255b90b709410
-size 288
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/reproduce_niamh_BL.iml" filepath="$PROJECT_DIR$/.idea/reproduce_niamh_BL.iml" />
+    </modules>
+  </component>
+</project>
