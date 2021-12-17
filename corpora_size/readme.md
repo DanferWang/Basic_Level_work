@@ -26,7 +26,7 @@
 
 Results in *italics* are the baseline performing Niamh's
 
-![image-20211217130301493](G:\CWI\Basic_Level_work\corpora_size\readme.assets\image-20211217130301493.png)
+![image-20211217130301493](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/image-20211217130301493.png?raw=true)
 
 CHILDES is distinct from others. It uses the relative sum as feature.
 
@@ -42,7 +42,7 @@ CHILDES is distinct from others. It uses the relative sum as feature.
 
 Results in *italics* are the baseline performing Niamh's
 
-![image-20211217130450989](G:\CWI\Basic_Level_work\corpora_size\readme.assets\image-20211217130450989.png)
+![image-20211217130450989](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/image-20211217130450989.png?raw=true)
 
 The influence to balanced accuracy is slight.
 
