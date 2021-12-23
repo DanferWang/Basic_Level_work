@@ -12,3 +12,5 @@ Whether corpora size would influence performance on kappa, balanced AVG, and pre
 - Conducting feature engineering on corpora
 - Merging frequency features to synsets in WordNet
 - Performing GlobalModel test
+- 10 times sampling CHILDES
+- The next stage feature engineering
