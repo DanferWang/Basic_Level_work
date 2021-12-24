@@ -62,4 +62,30 @@ We have the results saved in _10_times_sampling_CHILDES.npy_ and plot them in th
 
 The trends are not in regular. There are only two groups that kappa values go up with the size of corpus. And they have no regular patten like 7, 8, 9.
 
-- I guess the reason might be the choice of the feature, relative sum of occurrence counts. It could be verified in the next stage feature engineering.
+- I guess the reason might be the choice of the feature, relative sum of occurrence counts. But, after my verify this hypothesis, the result plots as follows:
+
+They show a worse situation that only one set agrees to the hypothesis. Most of them are even irregular.
+
+When we turn to the importance of each random forest, the feature of CHILDES sum contributes around 0.04 ranked within the last four positions. This hints that the CHILDES sum is not a important feature.
+
+## Next stage feature engineering
+
+- Maximum, minimum, and sum of occurrences in the same size among corpora.
+- Averaged occurrences in each size group of corpora
+
+After, I perform a GlobalModel test:
+
+Initially, I deploy a top-down method. 
+
+- With all new features, kappa: 0.655853, which is lower than the best one using BNC_100M, kappa: 0.714009.
+
+Therefore, top-down method for feature selection is not good for our task.
+
+Next, the feature selection using bottom-up method:
+
+- Step 1 (base: []): add 'min_1m', kappa: 0.715145
+
+- Step 2: (base:['min_1m']): no kappa gain
+
+  **Still tuning...**
+
