@@ -26,7 +26,7 @@ The importance of each random forest can be found in the notebook.
 
 Results in *italics* are the baseline performing Niamh's
 
-
+![kappa](https://github.com/DanferWang/Basic_Level_work/raw/main/corpora_size/readme.assets/size_output_kappa.png)
 
 BNC's are distinct from others rather than CHILDES the last setting.
 
@@ -42,7 +42,7 @@ BNC's are distinct from others rather than CHILDES the last setting.
 
 Results in *italics* are the baseline performing Niamh's
 
-
+![acc](https://github.com/DanferWang/Basic_Level_work/raw/main/corpora_size/readme.assets/size_output_acc.png)
 
 The influence to balanced accuracy is slight.
 
