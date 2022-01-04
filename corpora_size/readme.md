@@ -80,5 +80,8 @@ Next, the feature selection using bottom-up method:
 
 - Step 3: (base: ['avg_bnc', 'max_1m']): no kappa gains
 
-  **Still tuning...**
+
+# Several times sampling
+
+In order to find whether there is dependency between the kappa value and its corpus size, I deploy 50 times sampling for BNC, CHILDES, and CABNC with corresonding size in the previous setting. Then, performing the GlobalModel test can give us kappa values and balanced accuracy saved in .npy file.
 
