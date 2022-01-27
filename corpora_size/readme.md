@@ -85,3 +85,49 @@ Next, the feature selection using bottom-up method:
 
 In order to find whether there is dependency between the kappa value and its corpus size, I deploy 50 times sampling for BNC, CHILDES, and CABNC with corresonding size in the previous setting. Then, performing the GlobalModel test can give us kappa values and balanced accuracy saved in .npy file.
 
+LocalModel test and TransferModel test are also conducted. The values of kappa and balanced accuracy each setting are the mean results of five correspoding models in every sampling.
+
+To find out whether there is a dependency between the size of a corpus and the results, we perform Wilcoxon rank-sum test. The null hypothesis of the test is that the results by different sizes of one corpus are from the same distribution. The p-value of the tests are as follows:
+
+## GlobalModel Test
+
+|     kappa     |  CABNC  | CHILDES |    BNC     |
+| :-----------: | :-----: | :-----: | :--------: |
+|  **1M-2.4M**  | 0.35561 | 0.00043 |  0.01495   |
+|  **1M-5.7M**  |         | 0.00012 | *0.03431*  |
+|  **1M-100M**  |         |         | 2.4536e-5  |
+| **2.4M-5.7M** |         | 0.68420 |  0.82004   |
+| **2.4M-100M** |         |         | 7.6277e-11 |
+| **5.7M-100M** |         |         | 1.8512e-8  |
+
+| balanced accuracy |  CABNC  |  CHILDES  |    BNC    |
+| :---------------: | :-----: | :-------: | :-------: |
+|    **1M-2.4M**    | 0.23032 | 8.1844e-6 |  0.36648  |
+|    **1M-5.7M**    |         | 5.1090e-6 | *0.28218* |
+|    **1M-100M**    |         |           | 1.8692e-6 |
+|   **2.4M-5.7M**   |         |  0.93133  |  0.78274  |
+|   **2.4M-100M**   |         |           | 1.0752e-8 |
+|   **5.7M-100M**   |         |           | 3.8451e-8 |
+
+## LocalModel Test
+
+|     kappa     |  CABNC  | CHILDES |    BNC    |
+| :-----------: | :-----: | :-----: | :-------: |
+|  **1M-2.4M**  | 0.24400 | 0.07197 |  0.0720   |
+|  **1M-5.7M**  |         | 0.00253 | *0.00253* |
+|  **1M-100M**  |         |         |           |
+| **2.4M-5.7M** |         | 0.14964 |           |
+| **2.4M-100M** |         |         |           |
+| **5.7M-100M** |         |         |           |
+
+| balanced accuracy |   CABNC   | CHILDES |    BNC    |
+| :---------------: | :-------: | :-----: | :-------: |
+|    **1M-2.4M**    | 1.5527e-7 | 0.22766 |  0.22766  |
+|    **1M-5.7M**    |           | 0.02054 | *0.02054* |
+|    **1M-100M**    |           |         |           |
+|   **2.4M-5.7M**   |           | 0.13111 |           |
+|   **2.4M-100M**   |           |         |           |
+|   **5.7M-100M**   |           |         |           |
+
+## TransferModel Test
+
