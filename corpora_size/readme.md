@@ -158,38 +158,49 @@ With the same size, we try to find which corpus has the best performance each ti
 
 - 1M
 
-
+![global_1m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_1m_kappa.png?raw=true)
+![global_1m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_1m_acc.png?raw=true)
 
 - 2.4M
 
-
+![global_2_4m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_2_4m_kappa.png?raw=true)
+![global_2_4m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_2_4m_acc.png?raw=true)
 
 - 5.7M
 
-
+![global_5_7m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_5_7m_kappa.png?raw=true)
+![global_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_5_7m_acc.png?raw=true)
 
 ### LocalModel
 
 - 1M
 
-
+![local_1m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_1m_kappa.png?raw=true)
+![local_1m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_1m_acc.png?raw=true)
 
 - 2.4M
 
-
+![local_2_4m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_2_4m_kappa.png?raw=true)
+![local_2_4m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_2_4m_acc.png?raw=true)
 
 - 5.7M
 
-
+![local_5_7m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_5_7m_kappa.png?raw=true)
+![local_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_5_7m_acc.png?raw=true)
 
 ### TransferModel
 
 - 1M
 
-
+![transfer_1m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_1m_kappa.png?raw=true)
+![transfer_1m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_1m_acc.png?raw=true)
 
 - 2.4M
 
-
+![transfer_2_4m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_2_4m_kappa.png?raw=true)
+![transfer_2_4m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_2_4m_acc.png?raw=true)
 
 - 5.7M
+
+![transfer_5_7m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_5_7m_kappa.png?raw=true)
+![transfer_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_5_7m_acc.png?raw=true)
