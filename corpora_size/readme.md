@@ -20,10 +20,10 @@ The importance of each random forest can be found in the notebook.
 
 |             |   1M    |  2.4M   |  5.7M   |    100M    |
 | :---------: | :-----: | :-----: | :-----: | :--------: |
-|   **BNC**   | 0.68411 | 0.67875 | 0.68150 |  0.68738   |
-| **CHILDES** | 0.67022 | 0.66853 | 0.67512 |            |
-|  **CABNC**  | 0.67420 | 0.67805 |         |            |
-|  **KBNC**   | 0.67644 |         |         |            |
+|   **BNC**   | 0.67999 | 0.67486 | 0.67536 |  0.68926   |
+| **CHILDES** | 0.66660 | 0.67355 | 0.67473 |            |
+|  **CABNC**  | 0.67382 | 0.67205 |         |            |
+|  **KBNC**   | 0.68617 |         |         |            |
 | **NGrams**  |         |         |         | *0.677357* |
 
 ![kappa](https://github.com/DanferWang/Basic_Level_work/raw/main/corpora_size/readme.assets/size_output_kappa.png)
@@ -34,10 +34,10 @@ BNC's are distinct from others rather than CHILDES the last setting.
 
 |             |   1M    |  2.4M   |  5.7M   |    100M    |
 | :---------: | :-----: | :-----: | :-----: | :--------: |
-|   **BNC**   | 0.84686 | 0.84222 | 0.84556 |  0.84857   |
-| **CHILDES** | 0.84277 | 0.84350 | 0.84638 |            |
-|  **CABNC**  | 0.84050 | 0.84226 |         |            |
-|  **KBNC**   | 0.84460 |         |         |            |
+|   **BNC**   | 0.84349 | 0.84258 | 0.84228 |  0.84950   |
+| **CHILDES** | 0.84088 | 0.84519 | 0.84554 |            |
+|  **CABNC**  | 0.84027 | 0.83978 |         |            |
+|  **KBNC**   | 0.84835 |         |         |            |
 | **NGrams**  |         |         |         | *0.838679* |
 
 ![acc](https://github.com/DanferWang/Basic_Level_work/raw/main/corpora_size/readme.assets/size_output_acc.png)
@@ -87,12 +87,12 @@ LocalModel test and TransferModel test are also conducted. The values of kappa a
 
 To find out whether there is a dependency between the size of a corpus and the results, we perform Wilcoxon rank-sum test. The null hypothesis of the test is that the results by different sizes of one corpus are from the same distribution. The p-value of the tests are as follows:
 
-## GlobalModel Test
+### GlobalModel Test
 
 |     kappa     |  CABNC  | CHILDES |    BNC     |
 | :-----------: | :-----: | :-----: | :--------: |
 |  **1M-2.4M**  | 0.35561 | 0.00043 |  0.01495   |
-|  **1M-5.7M**  |         | 0.00012 | *0.03431*  |
+|  **1M-5.7M**  |         | 0.00012 |  0.03431   |
 |  **1M-100M**  |         |         | 2.4536e-5  |
 | **2.4M-5.7M** |         | 0.68420 |  0.82004   |
 | **2.4M-100M** |         |         | 7.6277e-11 |
@@ -101,18 +101,18 @@ To find out whether there is a dependency between the size of a corpus and the r
 | balanced accuracy |  CABNC  |  CHILDES  |    BNC    |
 | :---------------: | :-----: | :-------: | :-------: |
 |    **1M-2.4M**    | 0.23032 | 8.1844e-6 |  0.36648  |
-|    **1M-5.7M**    |         | 5.1090e-6 | *0.28218* |
+|    **1M-5.7M**    |         | 5.1090e-6 |  0.28218  |
 |    **1M-100M**    |         |           | 1.8692e-6 |
 |   **2.4M-5.7M**   |         |  0.93133  |  0.78274  |
 |   **2.4M-100M**   |         |           | 1.0752e-8 |
 |   **5.7M-100M**   |         |           | 3.8451e-8 |
 
-## LocalModel Test
+### LocalModel Test
 
 |     kappa     |  CABNC  | CHILDES |    BNC    |
 | :-----------: | :-----: | :-----: | :-------: |
 |  **1M-2.4M**  | 0.24400 | 0.07197 |  0.00205  |
-|  **1M-5.7M**  |         | 0.00253 | *0.01307* |
+|  **1M-5.7M**  |         | 0.00253 |  0.01307  |
 |  **1M-100M**  |         |         | 2.1711e-8 |
 | **2.4M-5.7M** |         | 0.14964 |  0.50369  |
 | **2.4M-100M** |         |         |  0.00688  |
@@ -120,12 +120,34 @@ To find out whether there is a dependency between the size of a corpus and the r
 
 | balanced accuracy |   CABNC   | CHILDES |    BNC     |
 | :---------------: | :-------: | :-----: | :--------: |
-|    **1M-2.4M**    | 1.5527e-7 | 0.22766 |  0.00471   |
-|    **1M-5.7M**    |           | 0.02054 | *0.00231*  |
+|    **1M-2.4M**    | 1.5527e-7 | 0.22766 |  0.01075   |
+|    **1M-5.7M**    |           | 0.02054 |  0.00231   |
 |    **1M-100M**    |           |         | 7.1346e-10 |
 |   **2.4M-5.7M**   |           | 0.13111 |  0.67410   |
 |   **2.4M-100M**   |           |         | 1.8709e-7  |
 |   **5.7M-100M**   |           |         | 6.7998e-7  |
 
-## TransferModel Test
+### TransferModel Test
+
+|     kappa     |   CABNC   | CHILDES |    BNC     |
+| :-----------: | :-------: | :-----: | :--------: |
+|  **1M-2.4M**  | 1.5922e-5 | 0.08114 |  0.06669   |
+|  **1M-5.7M**  |           | 0.00069 |  0.00037   |
+|  **1M-100M**  |           |         | 2.1730e-11 |
+| **2.4M-5.7M** |           | 0.07530 |  0.16797   |
+| **2.4M-100M** |           |         | 6.4897e-8  |
+| **5.7M-100M** |           |         | 6.7423e-6  |
+
+| balanced accuracy |  CABNC  | CHILDES |   BNC   |
+| :---------------: | :-----: | :-----: | :-----: |
+|    **1M-2.4M**    | 0.00051 | 0.78274 | 0.00471 |
+|    **1M-5.7M**    |         | 0.05273 | 0.01186 |
+|    **1M-100M**    |         |         | 0.08114 |
+|   **2.4M-5.7M**   |         | 0.08606 | 0.47340 |
+|   **2.4M-100M**   |         |         | 0.93407 |
+|   **5.7M-100M**   |         |         | 0.33794 |
+
+## Results by the size
+
+With the same size, we try to find which corpus has the best performance each time among 50 samplings. The figures firstly show the plots of kappa and balanced accuracy under GlobalModel.
 
