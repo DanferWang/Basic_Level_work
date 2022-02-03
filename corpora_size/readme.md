@@ -14,17 +14,17 @@
 ## GlobalModel test
 The importance of each random forest can be found in the notebook.
 
+**The tables and figures are updated with 50 samplings' averaged results.**
+
 ### Results on kappa
 
-|             |     1M     |    2.4M    |    5.7M    |    100M    |
-| :---------: | :--------: | :--------: | :--------: | :--------: |
-|   **BNC**   |  0.687879  |  0.684052  |  0.689859  | *0.686256* |
-| **CHILDES** |  0.665358  |  0.669301  | *0.673659* |            |
-|  **CABNC**  |  0.674959  | *0.687207* |            |            |
-|  **KBNC**   | *0.687594* |            |            |            |
-| **NGrams**  |            |            |            | *0.677357* |
-
-Results in *italics* are the baseline performing Niamh's
+|             |   1M    |  2.4M   |  5.7M   |    100M    |
+| :---------: | :-----: | :-----: | :-----: | :--------: |
+|   **BNC**   | 0.68411 | 0.67875 | 0.68150 |  0.68738   |
+| **CHILDES** | 0.67022 | 0.66853 | 0.67512 |            |
+|  **CABNC**  | 0.67420 | 0.67805 |         |            |
+|  **KBNC**   | 0.67644 |         |         |            |
+| **NGrams**  |         |         |         | *0.677357* |
 
 ![kappa](https://github.com/DanferWang/Basic_Level_work/raw/main/corpora_size/readme.assets/size_output_kappa.png)
 
@@ -32,15 +32,13 @@ BNC's are distinct from others rather than CHILDES the last setting.
 
 ### Results on balanced accuracy
 
-|             |     1M     |    2.4M    |    5.7M    |    100M    |
-| :---------: | :--------: | :--------: | :--------: | :--------: |
-|   **BNC**   |  0.846003  |  0.849977  |  0.851492  | *0.847429* |
-| **CHILDES** |  0.842183  |  0.843092  | *0.844433* |            |
-|  **CABNC**  |  0.838758  | *0.847429* |            |            |
-|  **KBNC**   | *0.850898* |            |            |            |
-| **NGrams**  |            |            |            | *0.838679* |
-
-Results in *italics* are the baseline performing Niamh's
+|             |   1M    |  2.4M   |  5.7M   |    100M    |
+| :---------: | :-----: | :-----: | :-----: | :--------: |
+|   **BNC**   | 0.84686 | 0.84222 | 0.84556 |  0.84857   |
+| **CHILDES** | 0.84277 | 0.84350 | 0.84638 |            |
+|  **CABNC**  | 0.84050 | 0.84226 |         |            |
+|  **KBNC**   | 0.84460 |         |         |            |
+| **NGrams**  |         |         |         | *0.838679* |
 
 ![acc](https://github.com/DanferWang/Basic_Level_work/raw/main/corpora_size/readme.assets/size_output_acc.png)
 
