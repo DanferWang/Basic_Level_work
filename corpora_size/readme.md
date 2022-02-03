@@ -26,9 +26,8 @@ The importance of each random forest can be found in the notebook.
 |  **KBNC**   | 0.67644 |         |         |            |
 | **NGrams**  |         |         |         | *0.677357* |
 
-![kappa](https://github.com/DanferWang/Basic_Level_work/raw/main/corpora_size/readme.assets/size_output_kappa.png)
+![kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/updated_50samplings_avg_kappa.png?raw=true)
 
-BNC's are distinct from others rather than CHILDES the last setting.
 
 ### Results on balanced accuracy
 
@@ -40,7 +39,7 @@ BNC's are distinct from others rather than CHILDES the last setting.
 |  **KBNC**   | 0.84460 |         |         |            |
 | **NGrams**  |         |         |         | *0.838679* |
 
-![acc](https://github.com/DanferWang/Basic_Level_work/raw/main/corpora_size/readme.assets/size_output_acc.png)
+![acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/updated_50samplings_avg_balancedacc.png?raw=true)
 
 The influence to balanced accuracy is slight.
 
