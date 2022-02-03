@@ -26,6 +26,8 @@ The importance of each random forest can be found in the notebook.
 |  **KBNC**   | 0.68617 |         |         |            |
 | **NGrams**  |         |         |         | *0.677357* |
 
+
+
 ![kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/updated_50samplings_avg_kappa.png?raw=true)
 
 
@@ -83,6 +85,8 @@ Next, the feature selection using bottom-up method:
 In order to find whether there is dependency between the kappa value and its corpus size, I deploy 50 times sampling for BNC, CHILDES, and CABNC with corresonding size in the previous setting. Then, performing the GlobalModel test can give us kappa values and balanced accuracy saved in .npy file.
 
 LocalModel test and TransferModel test are also conducted. The values of kappa and balanced accuracy each setting are the mean results of five correspoding models in every sampling.
+
+## Wilcoxon rank-sum test on size
 
 To find out whether there is a dependency between the size of a corpus and the results, we perform Wilcoxon rank-sum test. The null hypothesis of the test is that the results by different sizes of one corpus are from the same distribution. The p-value of the tests are as follows:
 
@@ -148,5 +152,44 @@ To find out whether there is a dependency between the size of a corpus and the r
 
 ## Results by the size
 
-With the same size, we try to find which corpus has the best performance each time among 50 samplings. The figures firstly show the plots of kappa and balanced accuracy under GlobalModel.
+With the same size, we try to find which corpus has the best performance each time among 50 samplings. The figures firstly show the plots of kappa and balanced accuracy under GlobalModel, LocalModel, and TransferModel.
 
+### GlobalModel
+
+- 1M
+
+
+
+- 2.4M
+
+
+
+- 5.7M
+
+
+
+### LocalModel
+
+- 1M
+
+
+
+- 2.4M
+
+
+
+- 5.7M
+
+
+
+### TransferModel
+
+- 1M
+
+
+
+- 2.4M
+
+
+
+- 5.7M
