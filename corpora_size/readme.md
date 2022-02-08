@@ -94,7 +94,7 @@ To find out whether there is a dependency between the size of a corpus and the r
 
 ### GlobalModel Test
 
-| kappa (less/two-sided/greater) |            CABNC            |            CHILDES            |              BNC              |
+| kappa(less/two-sided/greater) |            CABNC            |            CHILDES            |              BNC              |
 | :----------------------------: | :-------------------------: | :---------------------------: | :---------------------------: |
 |          **1M-2.4M**           | 0.82220/0.35561/**0.17780** |  **0.00021**/0.00043/0.99979  |  0.99252/0.01495/**0.00748**  |
 |          **1M-5.7M**           |                             | **5.9847e-5**/0.00012/0.99994 |  0.98284/0.03431/**0.01716**  |
@@ -114,7 +114,7 @@ To find out whether there is a dependency between the size of a corpus and the r
 
 ### LocalModel Test
 
-|     kappa     |          CABNC          |           CHILDES           |             BNC             |
+|     kappa(less/two-sided/greater)     |          CABNC          |           CHILDES           |             BNC             |
 | :-----------: | :---------------------: | :-------------------------: | :-------------------------: |
 |  **1M-2.4M**  | 0.12200/0.24400/0.87800 | **0.03599**/0.07197/0.96401 | **0.00103**/0.00205/0.99897 |
 |  **1M-5.7M**  |                         | **0.00126**/0.00253/0.99873 | **0.00654**/0.01307/0.99346 |
@@ -123,7 +123,7 @@ To find out whether there is a dependency between the size of a corpus and the r
 | **2.4M-100M** |                         |                             |           0.00688           |
 | **5.7M-100M** |                         |                             |           0.00041           |
 
-| balanced accuracy |          CABNC          |           CHILDES           |             BNC             |
+| balanced accuracy(less/two-sided/greater) |          CABNC          |           CHILDES           |             BNC             |
 | :---------------: | :---------------------: | :-------------------------: | :-------------------------: |
 |    **1M-2.4M**    | 7.7635e-8/1.5527e-7/1.0 |   0.11383/0.22766/0.88617   | **0.00235**/0.010750.99765  |
 |    **1M-5.7M**    |                         | **0.01027**/0.02054/0.98973 | **0.00116**/0.00231/0.99884 |
@@ -163,48 +163,48 @@ With the same size, we try to find which corpus has the best performance each ti
 - 1M
 
 ![global_1m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_1m_kappa.png?raw=true)
-![global_1m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_1m_acc.png?raw=true)
+![global_1m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_1m_kappa_box.png?raw=true)
 
 - 2.4M
 
 ![global_2_4m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_2_4m_kappa.png?raw=true)
-![global_2_4m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_2_4m_acc.png?raw=true)
+![global_2_4m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_2_4m_kappa_box.png?raw=true)
 
 - 5.7M
 
 ![global_5_7m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_5_7m_kappa.png?raw=true)
-![global_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_5_7m_acc.png?raw=true)
+![global_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_5_7m_kappa_box.png?raw=true)
 
 ### LocalModel
 
 - 1M
 
 ![local_1m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_1m_kappa.png?raw=true)
-![local_1m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_1m_acc.png?raw=true)
+![local_1m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_1m_kappa_box.png?raw=true)
 
 - 2.4M
 
 ![local_2_4m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_2_4m_kappa.png?raw=true)
-![local_2_4m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_2_4m_acc.png?raw=true)
+![local_2_4m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_2_4m_kappa_box.png?raw=true)
 
 - 5.7M
 
 ![local_5_7m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_5_7m_kappa.png?raw=true)
-![local_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_5_7m_acc.png?raw=true)
+![local_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_5_7m_kappa_box.png?raw=true)
 
 ### TransferModel
 
 - 1M
 
 ![transfer_1m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_1m_kappa.png?raw=true)
-![transfer_1m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_1m_acc.png?raw=true)
+![transfer_1m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_1m_kappa_box.png?raw=true)
 
 - 2.4M
 
 ![transfer_2_4m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_2_4m_kappa.png?raw=true)
-![transfer_2_4m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_2_4m_acc.png?raw=true)
+![transfer_2_4m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_2_4m_kappa_box.png?raw=true)
 
 - 5.7M
 
 ![transfer_5_7m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_5_7m_kappa.png?raw=true)
-![transfer_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_5_7m_acc.png?raw=true)
+![transfer_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_5_7m_kappa_box.png?raw=true)
