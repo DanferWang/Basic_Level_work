@@ -88,47 +88,49 @@ LocalModel test and TransferModel test are also conducted. The values of kappa a
 
 ## Wilcoxon rank-sum test on size
 
-To find out whether there is a dependency between the size of a corpus and the results, we perform Wilcoxon rank-sum test. The null hypothesis of the test is that the results by different sizes of one corpus are from the same distribution. The p-value of the tests are as follows:
+copussize_proformance_test.ipynb
+
+To find out whether there is a dependency between the size of a corpus and the results, we perform Wilcoxon rank-sum test. The null hypothesis of the test is that the results by different sizes of one corpus are from the same distribution. The tables are organized by alternative hypothesis that the distribution of sample1 is less, two-sided, or greater than that of sample2 . The p-value of the tests are as follows: (p-values less than 0.05 is **bold**)
 
 ### GlobalModel Test
 
-|     kappa     |  CABNC  | CHILDES |    BNC     |
-| :-----------: | :-----: | :-----: | :--------: |
-|  **1M-2.4M**  | 0.35561 | 0.00043 |  0.01495   |
-|  **1M-5.7M**  |         | 0.00012 |  0.03431   |
-|  **1M-100M**  |         |         | 2.4536e-5  |
-| **2.4M-5.7M** |         | 0.68420 |  0.82004   |
-| **2.4M-100M** |         |         | 7.6277e-11 |
-| **5.7M-100M** |         |         | 1.8512e-8  |
+| kappa (less/two-sided/greater) |            CABNC            |            CHILDES            |              BNC              |
+| :----------------------------: | :-------------------------: | :---------------------------: | :---------------------------: |
+|          **1M-2.4M**           | 0.82220/0.35561/**0.17780** |  **0.00021**/0.00043/0.99979  |  0.99252/0.01495/**0.00748**  |
+|          **1M-5.7M**           |                             | **5.9847e-5**/0.00012/0.99994 |  0.98284/0.03431/**0.01716**  |
+|          **1M-100M**           |                             |                               |  **1.2268e-5**/2.4536e-5/1.0  |
+|         **2.4M-5.7M**          |                             |    0.34210/0.68420/0.65790    |    0.58998/0.82004/0.41002    |
+|         **2.4M-100M**          |                             |                               | **3.8138e-11**/7.6277e-11/1.0 |
+|         **5.7M-100M**          |                             |                               |  **9.2562e-9**/1.8512e-8/1.0  |
 
-| balanced accuracy |  CABNC  |  CHILDES  |    BNC    |
-| :---------------: | :-----: | :-------: | :-------: |
-|    **1M-2.4M**    | 0.23032 | 8.1844e-6 |  0.36648  |
-|    **1M-5.7M**    |         | 5.1090e-6 |  0.28218  |
-|    **1M-100M**    |         |           | 1.8692e-6 |
-|   **2.4M-5.7M**   |         |  0.93133  |  0.78274  |
-|   **2.4M-100M**   |         |           | 1.0752e-8 |
-|   **5.7M-100M**   |         |           | 3.8451e-8 |
+| balanced accuracy(less/two-sided/greater) |          CABNC          |           CHILDES            |             BNC              |
+| :---------------------------------------: | :---------------------: | :--------------------------: | :--------------------------: |
+|                **1M-2.4M**                | 0.88484/0.23032/0.11516 | **4.09222e-6**/8.1844e-6/1.0 |   0.81676/0.36648/0.18324    |
+|                **1M-5.7M**                |                         | **2.5545e-6**/5.1090e-6/1.0  |   0.85891/0.28218/0.14109    |
+|                **1M-100M**                |                         |                              | **9.3459e-7**/1.8692e-6/1.0  |
+|               **2.4M-5.7M**               |                         |   0.53434/0.93133/0.46566    |   0.60863/0.78274/0.39137    |
+|               **2.4M-100M**               |                         |                              | **5.3758e-9**/11.0752e-8/1.0 |
+|               **5.7M-100M**               |                         |                              | **1.9226e-8**/3.8451e-8/1.0  |
 
 ### LocalModel Test
 
-|     kappa     |  CABNC  | CHILDES |    BNC    |
-| :-----------: | :-----: | :-----: | :-------: |
-|  **1M-2.4M**  | 0.24400 | 0.07197 |  0.00205  |
-|  **1M-5.7M**  |         | 0.00253 |  0.01307  |
-|  **1M-100M**  |         |         | 2.1711e-8 |
-| **2.4M-5.7M** |         | 0.14964 |  0.50369  |
-| **2.4M-100M** |         |         |  0.00688  |
-| **5.7M-100M** |         |         |  0.00041  |
+|     kappa     |          CABNC          |           CHILDES           |             BNC             |
+| :-----------: | :---------------------: | :-------------------------: | :-------------------------: |
+|  **1M-2.4M**  | 0.12200/0.24400/0.87800 | **0.03599**/0.07197/0.96401 | **0.00103**/0.00205/0.99897 |
+|  **1M-5.7M**  |                         | **0.00126**/0.00253/0.99873 | **0.00654**/0.01307/0.99346 |
+|  **1M-100M**  |                         |                             |          2.1711e-8          |
+| **2.4M-5.7M** |                         |   0.07482/0.14964/0.92518   |           0.50369           |
+| **2.4M-100M** |                         |                             |           0.00688           |
+| **5.7M-100M** |                         |                             |           0.00041           |
 
-| balanced accuracy |   CABNC   | CHILDES |    BNC     |
-| :---------------: | :-------: | :-----: | :--------: |
-|    **1M-2.4M**    | 1.5527e-7 | 0.22766 |  0.01075   |
-|    **1M-5.7M**    |           | 0.02054 |  0.00231   |
-|    **1M-100M**    |           |         | 7.1346e-10 |
-|   **2.4M-5.7M**   |           | 0.13111 |  0.67410   |
-|   **2.4M-100M**   |           |         | 1.8709e-7  |
-|   **5.7M-100M**   |           |         | 6.7998e-7  |
+| balanced accuracy |          CABNC          |           CHILDES           |             BNC             |
+| :---------------: | :---------------------: | :-------------------------: | :-------------------------: |
+|    **1M-2.4M**    | 7.7635e-8/1.5527e-7/1.0 |   0.11383/0.22766/0.88617   | **0.00235**/0.010750.99765  |
+|    **1M-5.7M**    |                         | **0.01027**/0.02054/0.98973 | **0.00116**/0.00231/0.99884 |
+|    **1M-100M**    |                         |                             |         7.1346e-10          |
+|   **2.4M-5.7M**   |                         |   0.06555/0.13111/0.93445   |           0.67410           |
+|   **2.4M-100M**   |                         |                             |          1.8709e-7          |
+|   **5.7M-100M**   |                         |                             |          6.7998e-7          |
 
 ### TransferModel Test
 
@@ -152,7 +154,9 @@ To find out whether there is a dependency between the size of a corpus and the r
 
 ## Results by the size
 
-With the same size, we try to find which corpus has the best performance each time among 50 samplings. The figures firstly show the plots of kappa and balanced accuracy under GlobalModel, LocalModel, and TransferModel.
+results_by_size.ipynb
+
+With the same size, we try to find which corpus has the best performance each time among 50 samplings. The figures only show the plots of kappa and box plots under GlobalModel, LocalModel, and TransferModel. The balanced accuracy is shown in the notebook.
 
 ### GlobalModel
 
