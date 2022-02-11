@@ -297,7 +297,7 @@ The overall results by each model are respectively shown in a boxplot with the s
 
   ![global_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_kappa_overall_box.png?raw=true)
 
-  ![global_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_acc_overall_box.png?raw=true)
+  ![global_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_balanced_acc_overall_box.png?raw=true)
 
 ### LocalModel
 
@@ -320,7 +320,7 @@ The overall results by each model are respectively shown in a boxplot with the s
 
 ![local_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_kappa_overall_box.png?raw=true)
 
-![local_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_acc_overall_box.png?raw=true)
+![local_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_balanced_acc_overall_box.png?raw=true)
 
 ### TransferModel
 
@@ -343,4 +343,4 @@ The overall results by each model are respectively shown in a boxplot with the s
 
 ![transfer_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_kappa_overall_box.png?raw=true)
 
-![transfer_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_acc_overall_box.png?raw=true)
+![transfer_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_balanced_acc_overall_box.png?raw=true)
