@@ -33,7 +33,7 @@ The importance of each random forest can be found in the notebook.
 
 
 
-![kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/updated_50samplings_avg_kappa.png?raw=true)
+![global_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/updated_50samplings_avg_kappa.png?raw=true)
 
 
 #### Results on balanced accuracy
@@ -46,7 +46,7 @@ The importance of each random forest can be found in the notebook.
 |  **KBNC**   | 0.84835 |         |         |            |
 | **NGrams**  |         |         |         | *0.838679* |
 
-![acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/updated_50samplings_avg_balancedacc.png?raw=true)
+![global_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/updated_50samplings_avg_balancedacc.png?raw=true)
 
 The influence to balanced accuracy is slight.
 
@@ -61,7 +61,7 @@ The influence to balanced accuracy is slight.
 |  **CABNC**  | 0.64296 | 0.64473 |         |         |
 |  **KBNC**   | 0.63305 |         |         |         |
 
-![kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/LocalModel_50samplings_avg_kappa.png?raw=true)
+![local_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/LocalModel_50samplings_avg_kappa.png?raw=true)
 
 #### Results on balanced accuracy
 
@@ -72,7 +72,7 @@ The influence to balanced accuracy is slight.
 |  **CABNC**  | 0.82858 | 0.83292 |         |         |
 |  **KBNC**   | 0.82662 |         |         |         |
 
-![kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/LocalModel_50samplings_avg_balancedacc.png?raw=true)
+![local_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/LocalModel_50samplings_avg_balancedacc.png?raw=true)
 
 ### TransferModel
 
@@ -85,7 +85,7 @@ The influence to balanced accuracy is slight.
 |  **CABNC**  | 0.51049 | 0.51581 |         |         |
 |  **KBNC**   | 0.53073 |         |         |         |
 
-![kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/TransferModel_50samplings_avg_kappa.png?raw=true)
+![transfer_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/TransferModel_50samplings_avg_kappa.png?raw=true)
 
 #### Results on balanced accuracy
 
@@ -96,7 +96,7 @@ The influence to balanced accuracy is slight.
 |  **CABNC**  | 0.79613 | 0.79882 |         |         |
 |  **KBNC**   | 0.80986 |         |         |         |
 
-![kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/TransferModel_50samplings_avg_balancedacc.png?raw=true)
+![transfer_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/TransferModel_50samplings_avg_balancedacc.png?raw=true)
 
 ## Discussion
 
@@ -293,6 +293,12 @@ The overall results by each model are respectively shown in a boxplot with the s
 ![global_5_7m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_5_7m_kappa.png?raw=true)
 ![global_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_5_7m_kappa_box.png?raw=true)
 
+- Overall
+
+  ![global_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_kappa_overall_box.png?raw=true)
+
+  ![global_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Global_acc_overall_box.png?raw=true)
+
 ### LocalModel
 
 - 1M
@@ -309,6 +315,12 @@ The overall results by each model are respectively shown in a boxplot with the s
 
 ![local_5_7m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_5_7m_kappa.png?raw=true)
 ![local_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_5_7m_kappa_box.png?raw=true)
+
+- Overall
+
+![local_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_kappa_overall_box.png?raw=true)
+
+![local_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Local_acc_overall_box.png?raw=true)
 
 ### TransferModel
 
@@ -327,3 +339,8 @@ The overall results by each model are respectively shown in a boxplot with the s
 ![transfer_5_7m_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_5_7m_kappa.png?raw=true)
 ![transfer_5_7m_acc](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_5_7m_kappa_box.png?raw=true)
 
+- Overall
+
+![transfer_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_kappa_overall_box.png?raw=true)
+
+![transfer_overall](https://github.com/DanferWang/Basic_Level_work/blob/main/corpora_size/readme.assets/Transfer_acc_overall_box.png?raw=true)
