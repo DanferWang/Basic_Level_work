@@ -1,0 +1,11 @@
+original sleep time is 14418.597886562347
+update sleep time is 11314.592459917068
+Done: ngram_1y 11363.51487660408 sec.
+Done: ngram_5y 11796.60065484047 sec.
+Done: ngram_10y 11749.833737134933 sec.
+Done: ngram_20y 11741.801320552826 sec.
+Done: ngram_50y 11753.594444036484 sec.
+Done: ngram_100y 11724.889083147049 sec.
+Done: ngram_200y 11803.975798368454 sec.
+Done: ngram_400y 11844.45114850998 sec.
+Done: ngram_500y 11875.330649137497 sec.
