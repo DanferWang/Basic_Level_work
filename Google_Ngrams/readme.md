@@ -10,6 +10,6 @@ As designed in the research question, the next step is using Google Ngram freque
 
 ​	The maximum can directly be one of the features. The mean values still need deviding by the year period and the result can be another feature. This processing can be regarded as 'local' feature engineering.
 
-	### Optimal crawler
+### Optimal crawler
 
 ​	It is found that continuous requests to Google Ngram viewer would trigger an exception that **`503 Service Unavailable`** and respond no valid frequency data. The reason is that Google set a limitation to protect its server and services. It can be found out that the policy of Google server request limit is likely 75 requests every 560 seconds. Therefore, we reschedule the sleep strategy to 72 requests then wait 580 seconds every round instead of sleeping 10 seconds each requests. After a time checker as a benchmark, the new strategy can have 21% speed up on the dataset.
