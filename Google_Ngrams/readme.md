@@ -10,7 +10,7 @@ As designed in the research question, the next step is using Google Ngram freque
 
 ​	The maximum can directly be one of the features. The mean values still need deviding by the year period and the result can be another feature. This processing can be regarded as 'local' feature engineering.
 
-	### Optimal crawler
+### Optimal crawler
 
 ​	It is found that continuous requests to Google Ngram viewer would trigger an exception that **`503 Service Unavailable`** and respond no valid frequency data. The reason is that Google set a limitation to protect its server and services. It can be found out that the policy of Google server request limit is likely 75 requests every 560 seconds. 
 
@@ -47,7 +47,7 @@ As designed in the research question, the next step is using Google Ngram freque
 
 ​	The results of each model test are as follow in plots. The variance is not large.
 
-#### GlobalModel Test
+### GlobalModel Test
 
 **Kappa**:
 
@@ -61,7 +61,7 @@ As designed in the research question, the next step is using Google Ngram freque
 
 ​	Balanced accuracy shows a similar trend to the kappa. Also, maximal 100y is the most proper one.
 
-#### LocalModel Test
+### LocalModel Test
 
 **Kappa**:
 
@@ -75,7 +75,7 @@ As designed in the research question, the next step is using Google Ngram freque
 
 ​	Mean 20y again show the best balanced accuracy and the second place comes to maximal 500y.
 
-#### TransferModel Test
+### TransferModel Test
 
 **Kappa**:
 
@@ -95,6 +95,6 @@ A similar trend to the kappa's shows that mean 20y and mean 100y are the best tw
 
 ### Conclusion
 
- 	1. Neither kappa nor balanced accuracy has direct relation with the time period. It means that the frequency features from Google Ngram can be used without considaring the corpus size (the size of Ngram in 1 year is large enough). Therefore, we want to only select the best ones to train.
- 	2. Frequency in mean or maximum does not matter too much in the most cases. Only GlobalModel in the experiment, maximums do better than means. The final best frequency features would come from the next step: Feature selection.
- 	3. Mentioned in the first research question, Hypothesis 1, and the presentation, GlobalModel and Transfermodel are more meaningful to refer when predicting in the large-scale WordNet. Therefore, I prefer to adopting maximal 100y as one of the frequency features when trainning models.
+ 1. Neither kappa nor balanced accuracy has direct relation with the time period. It means that the frequency features from Google Ngram can be used without considaring the corpus size (the size of Ngram in 1 year is large enough). Therefore, we want to only select the best ones to train.
+ 2. Frequency in mean or maximum does not matter too much in the most cases. Only GlobalModel in the experiment, maximums do better than means. The final best frequency features would come from the next step: Feature selection.
+ 3. Mentioned in the first research question, Hypothesis 1, and the presentation, GlobalModel and Transfermodel are more meaningful to refer when predicting in the large-scale WordNet. Therefore, I prefer to adopting maximal 100y as one of the frequency features when trainning models.
