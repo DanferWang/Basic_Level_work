@@ -1,0 +1,13 @@
+Features: ['ngram_1y_mean'] kappa=0.6895131395336889
+Features: ['ngram_5y_max'] kappa=0.6974403198307233
+Features: ['ngram_100y_max'] kappa=0.6996241732892688
+Features: ['ngram_20y_max', 'ngram_400y_max'] kappa=0.7030086137638083
+Features: ['ngram_1y_mean', 'ngram_5y_max', 'ngram_200y_max'] kappa=0.7031019549202395
+Features: ['ngram_1y_mean', 'ngram_5y_max', 'ngram_500y_max'] kappa=0.7037322499001186
+Features: ['ngram_1y_mean', 'ngram_10y_mean', 'ngram_100y_max'] kappa=0.7047381481074397
+Features: ['ngram_1y_max', 'ngram_400y_max', 'ngram_500y_max'] kappa=0.7050730423506504
+Features: ['ngram_5y_mean', 'ngram_200y_max', 'ngram_500y_max'] kappa=0.7065028153113982
+Features: ['ngram_5y_max', 'ngram_10y_max', 'ngram_100y_max'] kappa=0.7077463798402349
+Features: ['ngram_50y_mean', 'ngram_100y_max', 'ngram_500y_max'] kappa=0.7079334785298299
+Features: ['ngram_100y_max', 'ngram_400y_max', 'ngram_500y_max'] kappa=0.7099269456959352
+Features: ['ngram_1y_mean', 'ngram_100y_max', 'ngram_400y_max', 'ngram_500y_max'] kappa=0.7143862941758774
