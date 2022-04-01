@@ -65,7 +65,7 @@ result_plot.ipynb
 
 ![global_kappa](https://github.com/DanferWang/Basic_Level_work/blob/main/Google_Ngrams/readme.assets/GlobalMode_kappa.png?raw=true)
 
-​	Maximal frequency mainly behaves better kappa except 1 year. It is expected to select maximal 100 year as a frequency feature. A weird phenomenon is that 5 year and 100 year have a totally different trend. Moreover, max 100y has the best score while mean 100y does the worst. 
+​	Maximal frequency mainly behaves better kappa except 1 year. It is expected to select maximal 100 year as a frequency feature. A weird phenomenon is that 5 year and 100 year have a totally different trend. Moreover, max 100y has the best score while mean 100y does the worst. One possible reason is that the value of the maximal frequency of 100y is relatively much larger than the mean frequency and then it would has a dominant effect.
 
 **Balanced accuracy**:
 
@@ -169,9 +169,7 @@ feature_selection.ipynb
 
 #### Grid Search
 
-​	Learning from hyper-parameter tuning in machine learning, I design a brute force grid search among 18 frequency features which consumes a huge computation. It is a valid method to find the best selection of frequency features.
-
-
+​	Learning from hyper-parameter tuning in machine learning, I design a brute force grid search among 18 frequency features which consumes a huge computation. It is a valid method to find the best selection of frequency features. One of the best combination is ['ngram_50y_max', 'ngram_100y_max', 'ngram_400y_mean', 'ngram_500y_max'] which contributes to the kappa of 0.71443.
 
 
 
@@ -224,3 +222,6 @@ After six rounds of the selection, 14 frequency features left contribute the bes
 |         ngram_500y_mean         |  0.01333   |
 |          nrdirhypers_x          |  0.00199   |
 
+#### Grid Search
+
+​	Similar to the grid search setting in GlobalModel, we deploy another one for TransferModel. One of the best combination is ['ngram_5y_mean', 'ngram_50y_mean', 'ngram_100y_mean', 'ngram_200y_max', 'ngram_500y_max'] which contributes to the kappa of 0.58955. 

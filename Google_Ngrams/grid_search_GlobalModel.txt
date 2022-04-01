@@ -11,3 +11,4 @@ Features: ['ngram_5y_max', 'ngram_10y_max', 'ngram_100y_max'] kappa=0.7077463798
 Features: ['ngram_50y_mean', 'ngram_100y_max', 'ngram_500y_max'] kappa=0.7079334785298299
 Features: ['ngram_100y_max', 'ngram_400y_max', 'ngram_500y_max'] kappa=0.7099269456959352
 Features: ['ngram_1y_mean', 'ngram_100y_max', 'ngram_400y_max', 'ngram_500y_max'] kappa=0.7143862941758774
+Features: ['ngram_50y_max', 'ngram_100y_max', 'ngram_400y_mean', 'ngram_500y_max'] kappa=0.7144327457398147
