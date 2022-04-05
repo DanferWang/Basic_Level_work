@@ -1,3 +1,4 @@
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.w2v filter=lfs diff=lfs merge=lfs -text
 *.npy filter=lfs diff=lfs merge=lfs -text
+*.gz filter=lfs diff=lfs merge=lfs -text
