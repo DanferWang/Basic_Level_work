@@ -176,7 +176,7 @@ feature_selection.ipynb
 
 #### Bottom-up
 
-    Three rounds selection can reach the top kappa: **0.71150**. The selected frequency features are ['ngram_20y_mean', 'ngram_100y_max', 'ngram_400y_mean']. The importance of each feature are as follows:
+    Three rounds selection can reach the top kappa: **0.71150**. The reason why three rounds only select two features out is that we find the importance of 'ngram_20y_mean' has decreased relatively large in the second round. Therefore, we try to remove it and select with the others. The selected frequency features are ['ngram_100y_max', 'ngram_400y_mean']. The importance of each feature are as follows:
 
 | feature                         | importance |
 |:------------------------------- |:----------:|

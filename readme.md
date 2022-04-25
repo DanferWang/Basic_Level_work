@@ -4,20 +4,20 @@ Focusing on Basic Level research. For internship at HCDA, CWI
 
 ## Updating Score Board
 
-| Type                     | Model         | Kappa     | Balanced Accuracy |
-| ------------------------ | ------------- | --------- | ----------------- |
-| **Structural (WordNet)** | GlobalModel   | 0.67300   | 0.84365           |
-|                          | LocalModel    | 0.64046   | 0.82480           |
-|                          | TransferModel | 0.52074   | 0.80250           |
-| **Frequency (BNC_100M)** | GlobalModel   | 0.68926   | -                 |
-|                          | LocalModel    | 0.66197   | -                 |
-|                          | TransferModel | 0.55583   | -                 |
-| **(Google Ngram)**       | GlobalModel   | 0.71443   | 0.86463           |
-|                          | *LocalModel*  | *0.68000* | -                 |
-|                          | TransferModel | 0.58955   | 0.82433           |
-| **Semantic (W2V)**       | GlobalModel   | 0.71454   | 0.85938           |
-|                          | LocalModel    | 0.69334   | 0.85302           |
-|                          | TransferModel | 0.52200   | 0.80478           |
+| Type                     | Model         | Kappa   | Balanced Accuracy |
+| ------------------------ | ------------- | ------- | ----------------- |
+| **Structural (WordNet)** | GlobalModel   | 0.67300 | 0.84365           |
+|                          | LocalModel    | 0.64046 | 0.82480           |
+|                          | TransferModel | 0.52074 | 0.80250           |
+| **Frequency (BNC_100M)** | GlobalModel   | 0.68927 | 0.84950           |
+|                          | LocalModel    | 0.66197 | 0.84191           |
+|                          | TransferModel | 0.55583 | 0.81412           |
+| **(Google Ngram)**       | GlobalModel   | 0.71443 | 0.86463           |
+|                          | LocalModel    | 0.71150 | 0.86223           |
+|                          | TransferModel | 0.58955 | 0.82433           |
+| **Semantic (W2V)**       | GlobalModel   | 0.71454 | 0.85938           |
+|                          | LocalModel    | 0.69334 | 0.85302           |
+|                          | TransferModel | 0.52200 | 0.80478           |
 
 ## First work: Reproducing Niamh's project
 
