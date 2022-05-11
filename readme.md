@@ -18,6 +18,9 @@ Focusing on Basic Level research. For internship at HCDA, CWI
 | **Semantic (W2V)**       | GlobalModel   | 0.71454 | 0.85938           |
 |                          | LocalModel    | 0.69334 | 0.85302           |
 |                          | TransferModel | 0.52200 | 0.80478           |
+| **(BART)**               | GlobalModel   | 0.88077 | 0.95491           |
+|                          | LocalModel    | 0.89768 | 0.95206           |
+|                          | TransferModel | 0.70536 | 0.89478           |
 
 ## First work: Reproducing Niamh's project
 
@@ -58,3 +61,16 @@ Whether corpora size would influence performance on kappa, balanced AVG, and pre
    2. compute new vectors using the existing model for WordNet
 3. Conduct feature engineering for W2V data: distance as similarity
 4. Deploy the three model tests with the two solutions to multiwords.
+5. Test distance and W2V embedding vectors as semantic features with the three models.
+
+## Fifth work: Semantic features from BART
+
+1. Read literature on BART and Generation of English semantic features
+2. Organize the method of generation English semantic features
+3. Acquire dataset to train a mapping from words to English features
+4. Learn some modules of Transformers
+5. Implement and train the BART-based translation model from norms to English semantic features
+6. Implement two feature generation models: One to One Gen and One to Some Gen
+7. Generate English semantic features for all concepts in the dataset
+8. Define a formula and implement to calculate cue validity for each concept
+9. Do the three model tests and interpret the results
